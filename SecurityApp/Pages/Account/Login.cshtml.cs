@@ -25,8 +25,12 @@ namespace SecurityApp.Pages.Account
                 //Creating the security context 
                 var claims = new List<Claim>
                 {
-                    new Claim(ClaimTypes.NameIdentifier, "admin"),
-                    new Claim(ClaimTypes.Email, "admin@gmail.com")
+                    new Claim(ClaimTypes.Name, "admin"),
+                    new Claim(ClaimTypes.Email, "admin@gmail.com"),
+                    new Claim("Department", "HR"),
+                    new Claim("Admin", "true"),
+                    new Claim("Manager", "true"),
+                    new Claim("EmploymentDate", "2021-05-01")
                 };
 
                 var identity = new ClaimsIdentity(claims, "MyCookieAuth");
