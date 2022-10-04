@@ -40,6 +40,12 @@
                             <span class="text-danger" asp-validation-for="Credential.Password"></span>
                         </div>
 
+                        <!-- Checkbox -->
+                        <div class="form-check d-flex justify-content-center mb-4">
+                            <input asp-for="Credential.RememberMe" class="form-check-input me-2" type="checkbox" />
+                            <label asp-for="Credential.RememberMe" class="form-check-label" ></label>
+                        </div>
+
                         <!-- Submit button -->
                         <input type="submit" class="btn btn-primary" value="Login" />
 
